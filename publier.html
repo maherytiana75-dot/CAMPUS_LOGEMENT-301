@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusLogement | Publier une annonce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Campus<span>Logement 301</span></a>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="Log.html" class="nav-link">Logements</a></li>
+                <li><a href="publier.html" class="nav-link">Publier</a></li>
+                <li><a href="conseil.html" class="nav-link">Conseils</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-publier container">
+        <h2 style="margin-top: 2rem;">📢 Publier une annonce</h2>
+        <p style="text-align: center;">Remplissez ce formulaire pour proposer votre logement aux étudiants.</p>
+        
+        <div class="form-container fade-up">
+            <form id="publishForm">
+                <div class="form-group">
+                    <label for="nom">Nom du propriétaire *</label>
+                    <input type="text" id="nom" placeholder="MAHERY" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Téléphone *</label>
+                    <input type="tel" id="tel" placeholder="0382251718" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="maherytiana75@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="type">Type de logement *</label>
+                    <select id="type" required>
+                        <option value="">-- Sélectionnez --</option>
+                        <option value="studio">Studio</option>
+                        <option value="T1">T1</option>
+                        <option value="T2">T2</option>
+                        <option value="colocation">Colocation</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="adresse">Adresse *</label>
+                    <input type="text" id="adresse" placeholder="ANDRAINJATO" required>
+                </div>
+                <div class="form-group">
+                    <label for="prix">Prix mensuel (AR) *</label>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description *</label>
+                    <textarea id="description" placeholder="Décrivez votre logement (surface, équipements, proche transports...)" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Publier l'annonce</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div><h4>CampusLogement</h4><p>Votre partenaire logement étudiant.</p></div>
+                <div><h4>Liens</h4><p><a href="Log.html">Logements</a><br><a href="publier.html">Publier</a><br><a href="conseil.html">Conseils</a></p></div>
+                <div><h4>Contact</h4><p>📧 contact@campuslogement@gmail.com<br>📞 +261 38 22 517 18</p></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 CampusLogement--FIANARANTSOA</p></div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
